@@ -28,7 +28,7 @@ echo
 echo "                        ---------- FORWARD ----------"
 echo
 echo "mangle"
-iptables -t filter -L FORWARD -n -v
+iptables -t mangle -L FORWARD -n -v
 echo
 echo "filter"
 iptables -t filter -L FORWARD -n -v
@@ -37,22 +37,22 @@ echo
 echo "                         ---------- OUTPUT ----------"
 echo
 echo "raw"
-iptables -t nat -L OUTPUT -n -v
+iptables -t raw -L OUTPUT -n -v
 echo
 echo "mangle"
-iptables -t nat -L OUTPUT -n -v
+iptables -t mangle -L OUTPUT -n -v
 echo
 echo "nat"
 iptables -t nat -L OUTPUT -n -v
 echo
 echo "filter"
-iptables -t nat -L OUTPUT -n -v
+iptables -t filter -L OUTPUT -n -v
 echo
 echo
 echo "                       ---------- POSTROUTING ----------"
 echo
 echo "mangle"
-iptables -t nat -L POSTROUTING -n -v
+iptables -t mangle -L POSTROUTING -n -v
 echo
 echo "nat"
 iptables -t nat -L POSTROUTING -n -v

@@ -18,5 +18,8 @@ Rules are printed out from the following tables and chains in order, with the fl
 * mangle postrouting
 * nat postrouting.
 
-## Requirements ##
-iptables v1.6.1
+## Requirements
+iptables (lowest working version unknown)
+
+## Example
+![Exampe output of iptables-print.sh](https://github.com/jktoiuhito/iptables-print.sh/blob/master/example-output.png)

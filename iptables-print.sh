@@ -56,3 +56,4 @@ iptables -t mangle -L POSTROUTING -n -v
 echo
 echo "nat"
 iptables -t nat -L POSTROUTING -n -v
+exit 0
